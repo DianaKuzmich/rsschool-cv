@@ -6,78 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&family=Source+Serif+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Source+Sans+Pro&family=Source+Serif+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="container"></div>
         <nav>
-            <a href="#contacts">Contacts</a>
-            <a href="#about-me">About Me</a>
-            <a href="#skils">Skils</a>
-            <a href="#example">Code example</a>
-            <a href="#apartments">Education</a>
-            <a href="#apartments">Апартаменты</a>
+            <a class="header__link" href="#about-me">About Me</a>
+            <a class="header__link" href="#contacts">Contacts</a>
+            <a class="header__link" href="#skils">Skils</a>
+            <a class="header__link" href="#example">Code example</a>
+            <a class="header__link" href="#education">Education</a>
+            <a class="header__link" href="#languages">Languages</a>
         </nav>
+        </div>
     </header>
     <main>
-        <h1>Diana Kuzmich</h1>
-        <section class="contacts" id="contacts">
-            <h2 class="title">Contacts</h2>
-            <ul class="connection">
-                <li class="connection__link">Location: Brest, Belarus</li>
-                <li class="connection__link">
-                    <a href="tel:+11234567890">+375 33 388-03-88</a>
-                </li>
-                <li class="connection__link">
-                    <a href="mailto:agate@yandex.com">dianakuzmich@rambler.ru</a>
-                </li>
-                <li class="connection__link">GitHub: DianaKuzmich</li>
-            </ul>
-        </section>
-        <section class="about-me" id="about-me">
-            <h2 class="title">About Me</h2>
-            <p class="about-me__text">I love to code and want to work as a programmer. I have a certificate from Codegirl school and now I came to study at RS School. My goal is to gain knowledge in the field of front-end development.</p>
-        </section>
-        <section class="skils" id="skils">
-            <h2 class="title">Skills</h2>
-            <ul class="my-skils">
-                <li class="my-skils__link">HTML</li>
-                <li class="my-skils__link">CSS</li>
-                <li class="my-skils__link">SASS</li>
-                <li class="my-skils__link">BEM</li>
-                <li class="my-skils__link">VS Code</li>
-                <li class="my-skils__link">Figma (for web development)</li>
-            </ul>
-        </section>
-        <section class="example" id="example">
-            <h2 class="title">Code example:</h2>
-            <pre class="example__text">
-                function multiply (a, b) {
-                return a * b
-                }
-            </pre>
-        </section>
-        <section class="education">
-            <h2 class="title">Education</h2>
-            <ul>
-                <li class="education__lint">University: Brest State Technical University</li>
-                <li class="education__lint">Courses:
-                    <ul>
-                        <li>«Professional website development using HTML and CSS» on the online school CodeGirl School</li>
-                        <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section></section>
+        <div class="container">
+            <section class="profile main-container"></section>
+            <img class="profile__photo" src="assets/img/photo.jpg" alt="личное фото">
+            <h1>Diana Kuzmich</h1>
+            <p class="profile__text">Junior Front-End developer</p>
+            <section class="about-me" id="about-me">
+                <h2 class="title">About Me</h2>
+                <p class="about-me__text">I love to code and want to work as a programmer. I have a certificate from Codegirl school and now I came to study at RS School. My goal is to gain knowledge in the field of front-end development.</p>
+            </section>
+            <section class="contacts inline" id="contacts">
+                <h2 class="title">Contacts</h2>
+                <ul class="connection">
+                    <li class="connection__item">Location: Brest, Belarus</li>
+                    <li class="connection__item">Phone:
+                        <a href="tel:+11234567890">+375 33 388-03-88</a>
+                    </li>
+                    <li class="connection__item">Email:
+                        <a href="mailto:agate@yandex.com">dianakuzmich@rambler.ru</a>
+                    </li>
+                    <li class="connection__item">GitHub: DianaKuzmich</li>
+                </ul>
+            </section>
+            <section class="skils inline" id="skils">
+                <h2 class="title">Skills</h2>
+                <ul class="my-skils">
+                    <li class="my-skils__item">HTML</li>
+                    <li class="my-skils__item">CSS</li>
+                    <li class="my-skils__item">SASS</li>
+                    <li class="my-skils__item">BEM</li>
+                    <li class="my-skils__item">VS Code</li>
+                    <li class="my-skils__item">Figma (for web development)</li>
+                </ul>
+            </section>
+            <section class="example" id="example">
+                <h2 class="title">Code example:</h2>
+                <p class="example__text">
+                    function multiply (a, b) { </br>
+                    return a * b</br>
+                    }
+                </p>
+            </section>
+            <section class="education block" id="education">
+                <h2 class="title">Education</h2>
+                <ul>
+                    <li class="education__item">University: Brest State Technical University</li>
+                    <li class="education__item">Courses:
+                        <ul>
+                            <li>«Professional website development using HTML and CSS» on the online school CodeGirl School</li>
+                            <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="languages block" id="languages">
+                <h2 class="title">Languages</h2>
+                <ul class="languag">
+                    <li class="languag__item">Russian - Native</li>
+                    <li class="languag__item">Polish - Basic</li>
+                    <li class="languag__item">English – А2 (I continue studying)</li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-        <p footer__text> &copy; 2022</p>
-        <a class="footer__name" href="https://github.com/DianaKuzmich">DianaKuzmich</a>
-        <a class="footer__img" href="https://rs.school/js-stage0/">
-            <img src="assets/img/RS School.png" alt="RS School">
-        </a>
+        <div class="container">
+            <p class="footer__text line"> &copy; 2022</p>
+            <a class="footer__name line" href="https://github.com/DianaKuzmich">My GitHub</a>
+            <a class="footer__img line" href="https://rs.school/js-stage0/">
+                <img src="assets/img/RS School.png" alt="RS School" width="150px" height="50px">
+            </a>
+        </div>
     </footer>
 </body>
 
